@@ -35,8 +35,7 @@ export default class Chat extends Component {
     this.state.messages.push(mess);
     this.state.messages.push(loadingMessage);
     this.setState({messages: this.state.messages });
-
-    this.handleBot(message, mess)
+    this.handleBot(message, mess);
   }
 
   handleBot = (message, mess) => {
