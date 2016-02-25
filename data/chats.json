@@ -1,0 +1,68 @@
+{
+    "data": [
+        {
+            "user": {
+                "id": 5
+            },
+            "message": {
+                "id": 1
+            }
+        },
+        {
+            "user": {
+                "id": 6
+            },
+            "message": {
+                "id": 2
+            }
+        },
+        {
+            "user": {
+                "id": 5
+            },
+            "message": {
+                "id": 3
+            }
+        },
+        {
+            "user": {
+                "id": 6
+            },
+            "message": {
+                "id": 4
+            }
+        }
+    ],
+    "includes": [
+        {
+            "id": 1,
+            "text": "Hey, sorry I missed your call, I was too busy writing PHP",
+            "type": "message"
+        },
+        {
+            "id": 2,
+            "text": "Are you serious? Why on earth are you writing PHP?",
+            "type": "message"
+        },
+        {
+            "id": 3,
+            "text": "Do not make too much fun, Slack was built on PHP",
+            "type": "message"
+        },
+        {
+            "id": 4,
+            "text": "Slack can not have been built on PHP thats crazy",
+            "type": "message"
+        },
+        {
+            "id": 5,
+            "name": "John",
+            "type": "user"
+        },
+        {
+            "id": 6,
+            "name": "Kat",
+            "type": "user"
+        }
+    ]
+}
