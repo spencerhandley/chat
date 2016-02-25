@@ -16,13 +16,13 @@ export default class MessageList extends Component {
   }
   renderMessages() {
     let messages = this.props.messages.map((mess) => {
-      return <Message message={mess} key={mess.message.id}></Message>
+      return <Message message={mess} key={mess.message.id}></Message>;
     });
     return messages;
   }
   render() {
     return <div className="messages-list">
       {this.renderMessages()}
-    </div>
+    </div>;
   }
 }

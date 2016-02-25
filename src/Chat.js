@@ -98,6 +98,6 @@ export default class Chat extends Component {
     return <div className="chat-container">
       <MessageList messages={this.state.messages}></MessageList>
       <ChatInput onInputSubmit={this.handleSubmit}></ChatInput>
-    </div>
+    </div>;
   }
 }

@@ -7,16 +7,16 @@ export default class Message extends Component {
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
-      </div>
+      </div>;
     } else {
       // If the text is an image, render in img tag
       if(this.props.message.message.text.indexOf('.jpeg') > -1
       || this.props.message.message.text.indexOf('.gif') > -1
       || this.props.message.message.text.indexOf('.jpg') > -1
       || this.props.message.message.text.indexOf('.png') > -1){
-        return <img src={this.props.message.message.text} width="100%"></img>
+        return <img src={this.props.message.message.text} width="100%"></img>;
       } else {
-        return <p>{this.props.message.message.text}</p>
+        return <p>{this.props.message.message.text}</p>;
       }
     }
   }
@@ -27,6 +27,6 @@ export default class Message extends Component {
       <div className="message">
         {this.evaluateMessage()}
       </div>
-    </div>
+    </div>;
   }
 }
