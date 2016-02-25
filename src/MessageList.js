@@ -6,7 +6,7 @@ export default class MessageList extends Component {
   componentDidUpdate() {
     // Scrolls to the bottom if not already there
     let node = ReactDOM.findDOMNode(this);
-    let int = setInterval(function(){
+    let int = setInterval(() => {
       if(node.scrollTop + node.offsetHeight < node.scrollHeight){
         node.scrollTop += 3;
       } else {
@@ -15,7 +15,7 @@ export default class MessageList extends Component {
     }, 15);
   }
   renderMessages() {
-    let messages = this.props.messages.map(function(mess){
+    let messages = this.props.messages.map((mess) => {
       return <Message message={mess} key={mess.message.id}></Message>
     });
     return messages;

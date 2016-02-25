@@ -59,7 +59,7 @@ export default class Chat extends Component {
     })
     .then(function(d){
       // Fake typing delay
-      setTimeout(function(){
+      setTimeout(() => {
         let mess = {
           user: users[6],
           message: {text: d.message.message, id: messCount++}
